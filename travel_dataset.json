@@ -1,0 +1,191 @@
+[
+  {
+    "intent": "welcome",
+    "input": [
+      "Hi",
+      "Hello",
+      "Hey",
+      "Greetings",
+      "Good morning",
+      "Good afternoon",
+      "Good evening",
+      "Howdy",
+      "Hi there",
+      "Hey there"
+    ],
+    "response": [
+      "Hello! I'm your travel assistant. How can I help you today?",
+      "Hi there! What can I assist you with?",
+      "Welcome! How may I assist you with your travel plans today?",
+      "Greetings! Ready to explore some travel options?"
+    ]
+  },
+  {
+    "intent": "book_flight",
+    "input": [
+      "I want to book a flight",
+      "Can you help me book a flight?",
+      "Book a flight for me",
+      "I need to book a flight",
+      "I'd like to book a flight",
+      "I want to book a flight from {origin} to {destination} on {date}",
+      "Book a flight from {origin} to {destination} for {date}",
+      "Can you find a flight from {origin} to {destination} on {date}?",
+      "Please book a flight from {origin} to {destination} on {date}",
+      "I want a flight from {origin} to {destination} for {date}"
+    ],
+    "response": [
+      "Where would you like to depart from?",
+      "Can you please provide the departure city?",
+      "Where are you flying to?",
+      "When would you like to travel?"
+    ]
+  },  
+  {
+    "intent": "search_flights",
+    "input": [
+      "Show me flights from {origin} to {destination} on {date}.",
+      "Find me flights from {origin} to {destination} for {date}.",
+      "What flights are available from {origin} to {destination} on {date}?",
+      "Can you find flights from {origin} to {destination} on {date}?",
+      "What are the available flights from {origin} to {destination} for {date}?",
+      "I need flights from {origin} to {destination} on {date}.",
+      "Find flights from {origin} to {destination} on {date}.",
+      "Search for flights from {origin} to {destination} for {date}.",
+      "Look up flights from {origin} to {destination} on {date}.",
+      "What flights are available around {date}?",
+      "Can you check for flights near {date}?",
+      "Show me flights available in the week of {date}.",
+      "I’m traveling from {origin} to {destination} on {date}.",
+      "I’d like to see flights from {origin} to {destination} for {date}.",
+      "Could you list flights departing from {origin} to {destination} on {date}?",
+      "What are the best flight options from {origin} to {destination} for {date}?",
+      "Any flights available from {origin} to {destination} next month?",
+      "Please show me the flights for {origin} to {destination} on {date}.",
+      "Can you provide a list of flights for {origin} to {destination} on {date}?",
+      "I'm looking for flights from {origin} to {destination} on {date}."
+    ],
+    "response": [
+      "Here are the available flights from {origin} to {destination} on {date}.",
+      "I found several options for flights from {origin} to {destination} on {date}.",
+      "Let me check the flights for you.",
+      "Here’s a list of flights available on {date}."
+    ]
+  },
+  {
+    "intent": "flight_details",
+    "input": [
+      "Tell me more about the flight {flight_number}.",
+      "Can you give me details on flight {flight_number}?",
+      "What can you tell me about flight {flight_number}?",
+      "I need information about flight {flight_number}.",
+      "Provide details for flight {flight_number}."
+    ],
+    "response": [
+      "The flight {flight_number} departs from {origin} to {destination} on {date} at {departure_time}.",
+      "Flight {flight_number} will take you from {origin} to {destination} on {date}.",
+      "The departure time for flight {flight_number} is {departure_time}.",
+      "Flight {flight_number} leaves {origin} for {destination} on {date}."
+    ]
+  },
+  {
+    "intent": "check_prices",
+    "input": [
+      "What are the prices for flights from {origin} to {destination}?",
+      "Can you tell me the price range for flights from {origin} to {destination}?",
+      "How much do flights from {origin} to {destination} cost?",
+      "What’s the cost for a flight from {origin} to {destination}?",
+      "Give me the price details for flights from {origin} to {destination}."
+    ],
+    "response": [
+      "The prices for flights from {origin} to {destination} range from {min_price} to {max_price}.",
+      "Flights from {origin} to {destination} are available between {min_price} and {max_price}.",
+      "You can expect to pay between {min_price} and {max_price} for flights on that route."
+    ]
+  },
+  {
+    "intent": "confirm_booking",
+    "input": [
+      "I want to book flight {flight_number}.",
+      "Can I book flight {flight_number}?",
+      "Please confirm my booking for flight {flight_number}.",
+      "I’d like to book flight {flight_number}.",
+      "Make a reservation for flight {flight_number}.",
+      "Reserve flight {flight_number} for me.",
+      "Book flight {flight_number} please.",
+      "I'd like to confirm my booking for flight {flight_number}."
+    ],
+    "response": [
+      "Your booking for flight {flight_number} from {origin} to {destination} has been confirmed!",
+      "Booking confirmed for flight {flight_number}.",
+      "You've successfully booked flight {flight_number} from {origin} to {destination}!"
+    ]
+  },
+  {
+    "intent": "thank_you",
+    "input": [
+      "Okay, got it",
+      "Thanks!",
+      "Thank you!",
+      "I appreciate your help.",
+      "That’s helpful, thank you.",
+      "Thanks a lot!",
+      "You’re amazing, thanks!",
+      "Great, thanks for your help!"
+    ],
+    "response": [
+      "Thank you! Is there anything else I can help you with?",
+      "You're welcome! If you need anything else, just let me know.",
+      "Glad I could help! Do you have any more questions?"
+    ]
+  },
+  {
+    "intent": "handle_errors",
+    "input": [
+      "I didn't find any flights.",
+      "No flights are available.",
+      "I can’t find any options.",
+      "There are no results for my search.",
+      "I received no flight listings.",
+      "I can't see any flights matching my criteria.",
+      "Why are there no flights showing up?",
+      "It seems no flights are available for my dates."
+    ],
+    "response": [
+      "I'm sorry, but there are no available flights for your selected criteria. Would you like to try different dates or destinations?",
+      "Unfortunately, it seems there are no flights matching your criteria. Would you like to search again?",
+      "I couldn't find any flights. Would you like to specify different parameters?"
+    ]
+  },
+  {
+    "intent": "check_status",
+    "input": [
+      "What's the status of flight {flight_number}?",
+      "Is flight {flight_number} on time?",
+      "Can you check if flight {flight_number} is delayed?",
+      "What’s the current status of flight {flight_number}?",
+      "I need an update on flight {flight_number}."
+    ],
+    "response": [
+      "Flight {flight_number} is currently scheduled to depart on time.",
+      "Flight {flight_number} is delayed by {delay_time}.",
+      "The current status for flight {flight_number} is {status}.",
+      "Flight {flight_number} is currently {status}."
+    ]
+  },
+  {
+    "intent": "cancel_flight",
+    "input": [
+      "I need to cancel my flight {flight_number}.",
+      "Cancel my flight {flight_number}.",
+      "How do I cancel flight {flight_number}?",
+      "Please cancel my booking for flight {flight_number}.",
+      "I want to cancel the reservation for flight {flight_number}."
+    ],
+    "response": [
+      "Your flight {flight_number} has been successfully canceled.",
+      "I've canceled flight {flight_number} for you.",
+      "The booking for flight {flight_number} has been canceled as per your request."
+    ]
+  }
+]
